@@ -4,10 +4,10 @@ include(FetchContent)
 project ("raylib_standalone_template")
 
 # Add source files
-add_executable (raylib_standalone_template "src/Main.cpp")
+add_executable (${PROJECT_NAME} "src/Main.cpp")
 
 # Define CXX standard
-set_property(TARGET raylib_standalone_template PROPERTY CXX_STANDARD 20)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
 
 # Setup include & link directories
 target_link_directories(${PROJECT_NAME} PUBLIC lib)
